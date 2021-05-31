@@ -1,0 +1,5 @@
+readthreshold:
+    styphi: 4000
+    biphasic: 4000
+threads:
+    checkamplicons: 4
