@@ -36,7 +36,7 @@ rule checkamplicons:
 	threads:
 		config["threads"]["checkamplicons"]
 	script:
-		"bin/salmonellascript_with_if_statement.py"
+		"bin/checkamplicons.py"
 
 rule salmonella_serotype_multireport:
 	input:
