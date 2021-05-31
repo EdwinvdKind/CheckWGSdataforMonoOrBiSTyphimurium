@@ -87,6 +87,7 @@ with open(seqsero2output) as results:
         countFFLIB_FFLIA = "N/A"
         countsense_59_antisense_83 = "N/A"
 
+#determine if sample is biphasic, monophasic, or none
 if FFLIB_FFLIAoutput == True and sense_59_antisense_83output == True:
     variant = "Biphasic"
 elif FFLIB_FFLIAoutput == True and sense_59_antisense_83output == False:
@@ -94,8 +95,7 @@ elif FFLIB_FFLIAoutput == True and sense_59_antisense_83output == False:
 else:
     variant = "N/A"
     
-#print the output of both amplicons
-#print(sense_59_antisense_83output + '\n' + FFLIB_FFLIAoutput)
+#add the output into a dataframe using pandas
 
 seqsero_report = pd.read_csv(seqsero2output, sep='\t')
 seqsero_report = seqsero_report.iloc[:,[0,3,4,5,6,7,8,9,10]]
