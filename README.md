@@ -17,7 +17,7 @@ This repository contains the additional parts that need to be added to the Juno 
 ### Changes in main pipeline
 - Changed multireport rule and script (seqsero2_multireport.py). 
     - Multireport rule now takes a combined tsv file of seqsero2 and the checkamplicons rule.
-    - Script now takes all columns and rows in the .iloc function. This is because the combined tsv file already filters out the unneccasary columns and adds the checkamplicon result.
+    - Script now takes all columns and rows in the .iloc function. This is because the combined tsv file already filters out the unneccasary columns and adds the checkamplicons result.
 
 ### Possible errors
 - ran into a problem when running snakemake using more cores and at the same time more threads for seqsero2. This is probably a local problem on our server.
