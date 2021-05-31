@@ -9,7 +9,7 @@ This repository contains the additional parts that need to be added to the Juno 
   - A parameter "ReadThreshold" is then used to determine if the sample is monophasic or biphasic S. typhimurium.
   - The output of this is a combined tsv file of seqsero2 and if the sample is monophasic, biphasic, or none
   - For our project, we have added 2 additional columns which can be removed later from the script. This contains the counts of the amount of reads in the regions which are described above.
-- Added rule that runs the script that was described above
+- Added rule (checkamplicons) that runs the script that was described above
   - input is the result of seqsero2, WGS data, and the amplicon sequences
   - additional parameters are available, such as the amount of threads and the readthreshold
   - can run with the same version of tools that are used for the seqsero2 rule
