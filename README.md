@@ -1,4 +1,4 @@
-# CheckAmpliconsInSTyphi
+# CheckWGSdataforMonoOrBiSTyphimurium
 This repository contains the additional parts that need to be added to the Juno pipeline in order to discriminate S. Typhimurium from other H:i serovars and monophasic S. Typhimurium from biphasic S. typhimurium
 
 ### Additions to main pipeline
