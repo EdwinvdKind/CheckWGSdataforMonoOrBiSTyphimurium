@@ -2,7 +2,7 @@
 This repository contains the additional parts that need to be added to the Juno pipeline in order to discriminate S. Typhimurium from other H:i serovars and monophasic S. Typhimurium from biphasic S. typhimurium
 
 ### Additions to main pipeline
-- Added script (checkamplicons.py) to discriminate S. Typhimurium from other H:i serovars and monophasic S. Typhimurium from biphasic S. Typhimurium based on an in silico based approach
+- Added script (checkamplicons.py) to discriminate S. Typhimurium from other H:i serovars and monophasic S. Typhimurium from biphasic S. Typhimurium based on an in silico PCR based approach
   - Script first determines if specific serovar is present based on the output of seqsero2, if not present, script returns a none value for that sample.
   - The script maps the amplicon sequences of the primers FFLIB and RFLIA, and sense_59 and antisense_83 against the WGS data. With the mapped reads, samtools is used to generate a depth file. 
   - The depth file shows the amount of reads for each nucleotide of the amplicon sequence. The script then counts the amount of reads between nucleotide 75 and 780 for the FFLIB and RFLIA amplicon and nucleotide 425 and 1130 for the sense_59 and antisense_83 amplicon
