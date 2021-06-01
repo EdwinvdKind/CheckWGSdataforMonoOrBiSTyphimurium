@@ -6,9 +6,9 @@ This repository contains the additional parts that need to be added to the Juno 
   - Script first determines if specific serovar ("4:i:1,2" or "I 4,[5],12:i:-") is present based on the output of seqsero2, if not present, script returns a none value for that sample.
   - The script maps the amplicon sequences of the primers FFLIB and RFLIA, and sense_59 and antisense_83 against the WGS data. With the mapped reads, samtools is used to generate a depth file. 
   - The depth file shows the amount of reads for each nucleotide of the amplicon sequence. The script then counts the amount of reads between nucleotide 75 and 780 for the FFLIB and RFLIA amplicon and nucleotide 425 and 1130 for the sense_59 and antisense_83 amplicon
-  - A parameter "ReadThreshold" is then used to determine if the sample is monophasic or biphasic S. typhimurium.
+  - A parameter "ReadThreshold" in the config folder is then used to determine if the sample is monophasic or biphasic S. typhimurium.
   - The output of this is a combined tsv file of seqsero2 and if the sample is monophasic, biphasic, or none
-  - A parameter "Checkamplicon" is used to define the threads used for our script, suggested default is 4 threads.
+  - A parameter "Checkamplicons" in the config folder is used to define the threads used for our script, suggested default is 4 threads.
   - For our project report, we have added 2 additional columns which can be removed later from the script. This contains the counts of the amount of reads in the regions which are described above.
 - Added rule (checkamplicons) that runs the script that was described above
   - Input is the result of seqsero2, WGS data, and the amplicon sequences
